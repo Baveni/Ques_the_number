@@ -1,7 +1,5 @@
 import random
 
-
-
 print "Welcome to my hidden numbers game! Ques the number between 0 in 20!"
 
 answer = "Y"
@@ -33,7 +31,3 @@ while answer == "Y":
         else:
             break
 print "Thank you for playing"
-
-
-
-

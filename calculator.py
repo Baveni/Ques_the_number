@@ -8,7 +8,6 @@ while True:
     x = float(x)
     y = float(y)
 
-
     if operator == "+":
         print x + y
     elif operator == "-":
