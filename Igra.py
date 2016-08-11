@@ -1,25 +1,39 @@
 import random
 
-random_number = random.randint(0, 20)
+
 
 print "Welcome to my hidden numbers game! Ques the number between 0 in 20!"
-# user inputs random number
-user_input = raw_input("Please input number of your choice -->>")
-# user's input change to int
-user_input = int(user_input)
 
+answer = "Y"
 
-while user_input != random_number:
+while answer == "Y":
 
-    if random_number < user_input:
-        print "Your number is to high! Try again!"
+    user_input = raw_input("Please input number of your choice -->>")
 
-    else:
-        print "your number is to low! Try again!"
+    user_input = int(user_input)
+    random_number = random.randint(0, 20)
 
-    user_input = int(raw_input())
+    while user_input != random_number:
 
-print "You quesed the right number! Congratulations!"
+        if random_number < user_input:
+            print "Your number is to high! Try again!"
+
+        else:
+            print "your number is to low! Try again!"
+
+        user_input = int(raw_input())
+
+    print "You quesed the right number! Congratulations!"
+
+    while True:
+        print "would you like to play another game?"
+        answer = raw_input()
+        if answer not in "YN":
+            print "Please enter Y or N only."
+        else:
+            break
+print "Thank you for playing"
+
 
 
 
