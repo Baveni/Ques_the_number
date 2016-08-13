@@ -25,7 +25,7 @@ while answer == "Y":
 
     while True:
         print "would you like to play another game?"
-        answer = raw_input()
+        answer = raw_input().upper()
         if answer not in "YN":
             print "Please enter Y or N only."
         else:
