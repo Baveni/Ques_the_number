@@ -31,3 +31,4 @@ while answer == "Y":
         else:
             break
 print "Thank you for playing"
+print "this is different"
